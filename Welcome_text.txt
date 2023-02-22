@@ -1,0 +1,9 @@
+Welcome to Mastermind!
+It's a game about to guess the generated 5-digits code.
+
+Program will generate code for You, and then You will have 12 trials
+to guess the code.
+
+Difficulty level is set to hard. It means that in generated code digits can be repeted.
+
+Okay, everything is prepared. Let's start!
