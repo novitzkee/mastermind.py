@@ -159,3 +159,4 @@ if __name__ == '__main__':
 
     while play.get_actual_try() <= play.get_trials_limit():
         play.get_try()
+        play.next_try()
