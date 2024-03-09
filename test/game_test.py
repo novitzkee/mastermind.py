@@ -38,7 +38,10 @@ class SecretCodeTests(unittest.TestCase):
         ("12345", "54321", (1, 4)),
         ("11122", "22111", (1, 4)),
         ("11111", "11112", (4, 0)),
-        ("112233", "132132", (3, 3))
+        ("112233", "132132", (3, 3)),
+        ("11111", "11111", (5, 0)),
+        ("11111", "33133", (1, 0)),
+        ("11111", "23456", (0, 0))
     ])
     def test_comparing_attempt_to_code(self, code: str, attempt: str, expected: tuple[int, int]):
         result = SecretCode(code).compare(attempt)
